@@ -51,7 +51,7 @@ export default function Home() {
         handlerAcaoHeroi,
         gameOver,
         mensagemFinal,
-        pocoes // Pega a contagem de poções do hook
+        pocoes 
     } = useGameManager();
 
     return (
@@ -78,7 +78,6 @@ export default function Home() {
                     </ol>
                 </div>
 
-                {/* --- BOTÕES ATUALIZADOS --- */}
                 <div className={styles.ctas}>
                     <button onClick={() => handlerAcaoHeroi('atacar')} disabled={!turnoDoPlayer || gameOver}>
                         Atacar
